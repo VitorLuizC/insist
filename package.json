@@ -1,6 +1,6 @@
 {
   "name": "insistence",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Insistently runs a callback and only resolves the promise when its result is truthy.",
   "cdn": "dist/insistence.js",
   "main": "dist/insistence.cjs.js",
@@ -13,7 +13,8 @@
     "test": "ava",
     "build:typescript": "tsc src/insistence.ts --outDir dist -t es2015 -d",
     "build:bili": "bili dist/insistence.js --formats cjs,es,umd --js buble --banner",
-    "build": "npm run build:typescript && npm run build:bili"
+    "build": "npm run build:typescript && npm run build:bili",
+    "prepare": "npm run build && npm test"
   },
   "repository": {
     "type": "git",

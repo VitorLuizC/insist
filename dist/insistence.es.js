@@ -1,5 +1,5 @@
 /*!
- * insistence v0.0.0
+ * insistence v0.1.0
  * (c) 2018-present Vitor Luiz Cavalcanti <vitorluizc@outlook.com> (https://vitorluizc.github.io)
  * Released under the MIT License.
  */
