@@ -1,0 +1,29 @@
+{
+  "name": "insistence",
+  "version": "0.0.0",
+  "description": "Insistently runs a callback and only resolves the promise when its result is truthy.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/insistence.git"
+  },
+  "keywords": [
+    "insistence",
+    "retry",
+    "try-again",
+    "async"
+  ],
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/insistence/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/insistence#readme"
+}
