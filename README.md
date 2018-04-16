@@ -1,5 +1,7 @@
 # Insistence
 
+[![Build status][travis-badge]][travis]
+
 Insistently runs a callback and only resolves the promise when its result is truthy.
 
 ![][image]
@@ -41,3 +43,5 @@ Released under MIT license. You can see it [here][license].
 
 [license]: ./LICENSE
 [image]: https://bit.ly/2qz982z
+[travis]: https://travis-ci.org/VitorLuizC/insistence
+[travis-badge]: https://travis-ci.org/VitorLuizC/insistence.svg?branch=master
