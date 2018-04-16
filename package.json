@@ -10,7 +10,7 @@
   "browser": "dist/insistence.js",
   "jsdelivr": "dist/insistence.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "build:typescript": "tsc src/insistence.ts --outDir dist -t es2015 -d",
     "build:bili": "bili dist/insistence.js --formats cjs,es,umd --js buble --banner",
     "build": "npm run build:typescript && npm run build:bili"
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/VitorLuizC/insistence#readme",
   "devDependencies": {
+    "ava": "^0.25.0",
     "bili": "^3.0.15",
     "typescript": "^2.8.1"
   }
