@@ -19,13 +19,23 @@ type InsistΛ = () => boolean | Promise<boolean>;
  */
 function Insistence (λ: InsistΛ, time: number = 200): Promise<void> {
   return new Promise((resolve) => {
-    const insist = (): Promise<any> => Promise.resolve(λ())
-      .then((success: boolean) => {
-        if (!success)
-          throw new Error('Success not achieved. Keep insisting.');
-        resolve();
-      })
-      .catch(() => delay(time).then(insist));
+    const insist = (): Promise<any> => {
+      let success: boolean | Promise<boolean>
+
+      try {
+        success = λ()
+      } catch (_) {
+        success = false
+      }
+
+      return Promise.resolve(success)
+        .then((success: boolean) => {
+          if (!success)
+            throw new Error('Success not achieved. Keep insisting.');
+          resolve();
+        })
+        .catch(() => delay(time).then(insist));
+      }
     return insist();
   });
 }

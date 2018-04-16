@@ -27,10 +27,20 @@
       if ( time === void 0 ) time = 200;
 
       return new Promise(function (resolve) {
-        var insist = function () { return Promise.resolve(λ()).then(function (success) {
-          if (!success) { throw new Error('Success not achieved. Keep insisting.'); }
-          resolve();
-        }).catch(function () { return delay(time).then(insist); }); };
+        var insist = function () {
+          var success;
+
+          try {
+            success = λ();
+          } catch (_) {
+            success = false;
+          }
+
+          return Promise.resolve(success).then(function (success) {
+            if (!success) { throw new Error('Success not achieved. Keep insisting.'); }
+            resolve();
+          }).catch(function () { return delay(time).then(insist); });
+        };
 
         return insist();
       });
