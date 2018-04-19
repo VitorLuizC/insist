@@ -42,6 +42,6 @@ Released under MIT license. You can see it [here][license].
 <!-- Links -->
 
 [license]: ./LICENSE
-[image]: https://bit.ly/2qz982z
+[image]: https://i.pinimg.com/originals/fb/91/44/fb9144fc1389ba226b99ef2d96838f1c.gif
 [travis]: https://travis-ci.org/VitorLuizC/insistence
 [travis-badge]: https://travis-ci.org/VitorLuizC/insistence.svg?branch=master
