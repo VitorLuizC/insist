@@ -1,4 +1,4 @@
-# Insistence
+# `@bitty/insistence`
 
 [![Build status][travis-badge]][travis]
 
@@ -12,16 +12,16 @@ Install using NPM or Yarn.
 
 ```sh
 # Using NPM
-npm i insistence
+npm install @bitty/insistence --save
 
 # Using Yarn
-yarn add insistence
+yarn add @bitty/insistence
 ```
 
 There's also an UMD version on unpkg.
 
 ```html
-<script src="https://unpkg.com/insistence"></script>
+<script src="https://unpkg.com/@bitty/insistence"></script>
 ```
 
 ## Usage
