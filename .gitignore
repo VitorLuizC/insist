@@ -20,6 +20,9 @@ yarn.lock
 *.log
 *.log.*
 
+# Generated distribution bundles and their source-maps.
+/dist
+
 # Generated type declarations.
 /types
 

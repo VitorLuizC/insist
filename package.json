@@ -2,17 +2,31 @@
   "name": "@bitty/insistence",
   "version": "0.2.0",
   "description": "Insistently runs a callback and only resolves the promise when its result is truthy.",
-  "cdn": "dist/insistence.js",
-  "main": "dist/insistence.cjs.js",
-  "unpkg": "dist/insistence.js",
-  "types": "types/insistence.d.ts",
-  "module": "dist/insistence.es.js",
-  "browser": "dist/insistence.js",
-  "jsdelivr": "dist/insistence.js",
+  "cdn": "./dist/insistence.umd.min.js",
+  "main": "./dist/insistence.js",
+  "unpkg": "./dist/insistence.umd.min.js",
+  "types": "./types/insistence.d.ts",
+  "module": "./dist/insistence.esm.js",
+  "jsdelivr": "./dist/insistence.umd.min.js",
+  "umd:main": "./dist/insistence.umd.js",
+  "exports": {
+    ".": [
+      {
+        "import": "./dist/insistence.mjs",
+        "require": "./dist/insistence.js",
+        "default": "./dist/insistence.js"
+      },
+      "./dist/insistence.js"
+    ]
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
     "test": "ava",
     "build:transpile": "tsc -P ./tsconfig.build.json",
-    "build:bili": "bili dist/insistence.js --formats cjs,es,umd --js buble --banner",
+    "build:bili": "rollup --config ./rollup.config.js",
     "build": "pnpm run build:transpile && pnpm run build:bili",
     "prepare": "pnpm run build && pnpm test"
   },
@@ -38,7 +52,8 @@
   "homepage": "https://github.com/VitorLuizC/insistence#readme",
   "devDependencies": {
     "ava": "^0.25.0",
-    "bili": "^3.0.15",
+    "rollup": "^2.33.1",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.0.5"
   }
 }
