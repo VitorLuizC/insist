@@ -5,15 +5,15 @@
   "cdn": "dist/insistence.js",
   "main": "dist/insistence.cjs.js",
   "unpkg": "dist/insistence.js",
-  "types": "dist/insistence.d.ts",
+  "types": "types/insistence.d.ts",
   "module": "dist/insistence.es.js",
   "browser": "dist/insistence.js",
   "jsdelivr": "dist/insistence.js",
   "scripts": {
     "test": "ava",
-    "build:typescript": "tsc src/insistence.ts --outDir dist -t es2015 -d",
+    "build:transpile": "tsc -P ./tsconfig.build.json",
     "build:bili": "bili dist/insistence.js --formats cjs,es,umd --js buble --banner",
-    "build": "pnpm run build:typescript && pnpm run build:bili",
+    "build": "pnpm run build:transpile && pnpm run build:bili",
     "prepare": "pnpm run build && pnpm test"
   },
   "repository": {
@@ -39,6 +39,6 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "bili": "^3.0.15",
-    "typescript": "^2.8.1"
+    "typescript": "^4.0.5"
   }
 }
