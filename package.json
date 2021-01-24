@@ -1,6 +1,6 @@
 {
   "name": "@bitty/insistence",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Insistently runs a callback and only resolves the promise when its result is truthy.",
   "cdn": "./dist/insistence.umd.min.js",
   "main": "./dist/insistence.js",
