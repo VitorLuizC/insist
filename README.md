@@ -1,4 +1,4 @@
-# `@bitty/insistence`
+# `@bitty/insist`
 
 Insistently runs a callback and only resolves the promise when its result is truthy.
 
@@ -10,24 +10,24 @@ Install using NPM or Yarn.
 
 ```sh
 # Using NPM
-npm install @bitty/insistence --save
+npm install @bitty/insist --save
 
 # Using Yarn
-yarn add @bitty/insistence
+yarn add @bitty/insist
 ```
 
 There's also an UMD version on unpkg.
 
 ```html
-<script src="https://unpkg.com/@bitty/insistence"></script>
+<script src="https://unpkg.com/@bitty/insist"></script>
 ```
 
 ## Usage
 
 ```js
-import insistence from 'insistence'
+import insist from '@bitty/insist'
 
-insistence(() => window.readyState === 'complete')
+insist(() => window.readyState === 'complete')
   .then(() => {
     // It's only resolved when window.readyState is 'complete'.
   })

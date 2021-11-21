@@ -16,28 +16,28 @@ const Option = (options) => ({
  * @type {import('rollup').RollupOptions}
  */
 const options = {
-  input: './src/insistence.js',
+  input: './src/insist.js',
   output: [
     Option({
-      file: './dist/insistence.js',
+      file: './dist/insist.js',
       format: 'commonjs',
     }),
     Option({
-      file: './dist/insistence.esm.js',
+      file: './dist/insist.esm.js',
       format: 'esm',
     }),
     Option({
-      file: './dist/insistence.mjs',
+      file: './dist/insist.mjs',
       format: 'esm',
     }),
     Option({
-      file: './dist/insistence.umd.js',
-      name: 'Insistence',
+      file: './dist/insist.umd.js',
+      name: 'insist',
       format: 'umd',
     }),
     Option({
-      file: './dist/insistence.umd.min.js',
-      name: 'Insistence',
+      file: './dist/insist.umd.min.js',
+      name: 'insist',
       format: 'umd',
       plugins: [terser()],
     }),

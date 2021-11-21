@@ -1,22 +1,22 @@
 {
-  "name": "@bitty/insistence",
+  "name": "@bitty/insist",
   "version": "0.2.2",
   "description": "Insistently runs a callback and only resolves the promise when its result is truthy.",
-  "cdn": "./dist/insistence.umd.min.js",
-  "main": "./dist/insistence.js",
-  "unpkg": "./dist/insistence.umd.min.js",
-  "types": "./types/insistence.d.ts",
-  "module": "./dist/insistence.esm.js",
-  "jsdelivr": "./dist/insistence.umd.min.js",
-  "umd:main": "./dist/insistence.umd.js",
+  "cdn": "./dist/insist.umd.min.js",
+  "main": "./dist/insist.js",
+  "unpkg": "./dist/insist.umd.min.js",
+  "types": "./types/insist.d.ts",
+  "module": "./dist/insist.esm.js",
+  "jsdelivr": "./dist/insist.umd.min.js",
+  "umd:main": "./dist/insist.umd.js",
   "exports": {
     ".": [
       {
-        "import": "./dist/insistence.mjs",
-        "require": "./dist/insistence.js",
-        "default": "./dist/insistence.js"
+        "import": "./dist/insist.mjs",
+        "require": "./dist/insist.js",
+        "default": "./dist/insist.js"
       },
-      "./dist/insistence.js"
+      "./dist/insist.js"
     ]
   },
   "files": [
@@ -35,10 +35,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VitorLuizC/insistence.git"
+    "url": "git+https://github.com/VitorLuizC/insist.git"
   },
   "keywords": [
-    "insistence",
+    "insist",
     "retry",
     "try-again",
     "async"
@@ -50,9 +50,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VitorLuizC/insistence/issues"
+    "url": "https://github.com/VitorLuizC/insist/issues"
   },
-  "homepage": "https://github.com/VitorLuizC/insistence#readme",
+  "homepage": "https://github.com/VitorLuizC/insist#readme",
   "devDependencies": {
     "ava": "^3.15.0",
     "prettier": "^2.4.1",
