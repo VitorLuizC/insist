@@ -27,7 +27,7 @@ test("insist's checks condition until it is satisfied", async (context) => {
 test("insist's waits time to check condition again", async (context) => {
   const TIME = 100;
 
-  let count = 0;
+  let count = -1;
   const before = Date.now();
 
   await insist(() => {
